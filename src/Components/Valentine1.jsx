@@ -15,7 +15,7 @@ function Valentine1() {
   // const [message,setMessage]=useState('');
 
   const messages=["Oops… try again sweetheart 💖",
-  "Sorry babe… I’m your only option now 😉"];
+  "Sorry babe… I’m your only option… always😉"];
 
     const handleNoClick=(()=>{
       setMsgIndex(prev=>(prev < messages.length - 1 ? prev + 1 : prev));
