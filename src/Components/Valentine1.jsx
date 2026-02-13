@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import teddy from '../assets/valentinee.gif'
 const btnStyle={
       width: "80px", 
       height:"36px",
@@ -35,22 +35,23 @@ function Valentine1() {
         justifyContent: "center",height: "300px",border: "1px solid #ddd",
         borderRadius: "12px",width: "520px",margin: "50px auto",textAlign: "center"}}>
 
+        <img src={teddy} alt="cute teddy" style={{ width: "120px", marginTop:"10px" }} />
         <h1 style={{margin:"5px 0px"}}><i>Lithuuu 😘,</i></h1>
         <h2 style={{margin:"0"}}><i>Will you be my Valentine?💘</i></h2>
         <h5 style={{margin:"2px 0 0 0"}}><i>(⚠️Warning: “No” isn’t an option… the system won’t accept it😜)</i></h5>
 
         <div style={{ display: "flex", gap: "10px", marginTop: "10px"}}>
         {isNoVisible && isNoFirst && (<button onClick={()=>{handleNoClick()}}
-                 style={{...btnStyle,backgroundColor:"#8bca84"}}>No😢</button>)}
+                 style={{...btnStyle,backgroundColor:"#FF746C"}}>No😢</button>)}
 
           <button onClick={()=>{
             alert('Yayyy! Thank you, babeee ❤️ I made a tiny surprise for you — not something I bought, but something filled with my love 💕 Come home soon 😊')}} 
-            style={{...btnStyle,backgroundColor:"#FF7F7F"}}>Yes😍</button>
+            style={{...btnStyle,backgroundColor:"#8bca84"}}>Yes😍</button>
             
             {isNoVisible && !isNoFirst && (
             <button
               onClick={()=>handleNoClick()}
-              style={{...btnStyle,backgroundColor:"#8bca84"}}
+              style={{...btnStyle,backgroundColor:"#FF746C"}}
               >
               No😢
             </button>
